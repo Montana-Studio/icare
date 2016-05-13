@@ -1,0 +1,26 @@
+{
+  "name": "_Landing-icare",
+  "title": " Landing Icare",
+  "description": "Best project ever.",
+  "version": "0.1.0",
+  "homepage": "http://www._Landing-icare.com/",
+  "author": {
+    "name": "Montana Studio",
+    "email": "mauro@montana-studio.com",
+    "url": "http://www.montana-studio.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mediatrends/_Landing-icare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mediatrends/_Landing-icare/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www._Landing-icare.com//blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": []
+}

@@ -1,0 +1,239 @@
+body {
+	widows: 100%;
+	height: 100%;
+	background: $rojo1; 
+	margin:0;
+	.content-icare {
+		@include span-columns(12);
+		@include omega();
+		padding:{top:40px;left:10px;bottom:0;right:10px;}
+		position: absolute;
+		height: 100%;
+		background: $rojo1; 
+		max-width: 800px;
+		@include media($notebook) {
+			max-width: 800px;
+			float: none;
+			margin: 0 auto!important;
+			right:0;
+			left:0;
+		}
+		@include media($desktop) {
+			max-width: 800px;
+			float: none;
+			margin: 0 auto!important;
+			right:0;
+			left:0;
+		}
+		.logotipo-cosas-header {
+			@include outer-container(30%);
+			@include media($mobileLand) {
+				@include span-columns(2);
+				display: inline-block;
+			}
+			@include media($tablet) {
+				@include outer-container(20%);
+			}
+			@include media($tabletLand) {
+				@include span-columns(3);
+				display: inline-block;
+			}
+			@include media($notebook) {
+				@include outer-container(17%);
+			}
+			svg {
+				display: block;
+				height: auto;
+				width: 100%;
+				path {
+					fill:#fff;
+				}
+			}
+		}
+		.logotipe-icare-header {
+			@include outer-container(60%);
+			@include media($mobileLand) {
+				@include span-columns(3);
+				display: inline-block;
+				margin:{top:-30px;}
+			}
+			@include media($tablet) {
+				@include outer-container(40%);
+			}
+			@include media($tabletLand) {
+				@include span-columns(3);
+				display: inline-block;
+				margin:{top:-30px;}
+			}
+			@include media($notebook) {
+				@include outer-container(25%);
+			}
+			svg {
+				display: block;
+				height: auto;
+				width: 100%;
+				path {
+					fill:#fff;
+				}
+			}
+		}
+		.social-share {
+			@include span-columns(12);
+			@include omega();
+			text:{align:center;}
+			@include media($mobileLand) {
+				@include span-columns(4);
+				float: right;
+			}
+			@include media($tabletLand) {
+				@include span-columns(4);
+				float: right;
+			}
+			ul {
+				@include span-columns(12);
+				@include omega();
+				@include pad(0);
+				text:{align:center;}
+				margin:{top:50px;}
+				@include media($mobileLand) {
+					@include span-columns(12);
+					float: right;
+					margin:0;
+				}	
+				@include media($tablet) {
+					@include outer-container(60%);
+					float: initial;
+					margin:{top:60px;left: auto !important; bottom:0;right:auto !important;}
+					display: block;
+				}
+				@include media($notebook) {
+					@include span-columns(12);
+					@include outer-container(100%);
+					@include omega();
+					margin:{top:20px;left: auto !important; bottom:0;right:auto !important;}
+				}
+				li {
+					@include span-columns(2);
+					float: none;
+					display: inline-block;
+					list-style:none;
+					margin:{left:0px;right:0px;}
+					@include media($mobileLand) {
+						@include span-columns(4);
+						float: none;
+						display: inline-block;
+						margin:0;
+					}
+					@include media($tabletLand) {
+						@include span-columns(3);
+						float: none;
+						display: inline-block;
+						margin:0;
+					}
+					@include media($notebook) {
+						@include span-columns(1.2);
+						float: right;
+						display: inline-block;
+						margin:0;
+					}
+					@include media($desktop) {
+						@include span-columns(1);
+						float: right;
+						display: inline-block;
+						margin:0;
+					}
+					a {
+						width:45px;
+						height: 45px;
+						background: #fff;
+						border-radius:50%;
+						display: table;
+						border:1px solid #fff;
+						text:{decoration:none;}
+						@include transition(all 0.3s ease-in-out);
+						i {
+							display: table-cell;
+							vertical-align: middle;
+							color:blue;
+							font:{size:1.5em;}
+							color:#3a3a3a;
+						}
+						&:hover {
+							background:none;
+							border:1px solid #fff;
+							i {
+								color: #fff;
+							}
+						}
+					}
+					&.whatsapp-mobile {
+						@include media($notebook) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.frame-promocional {
+			@include span-columns(12);
+			@include omega();
+			background: #000;
+			margin:{top:20px;}
+			@include media($desktop) {
+				height: 450px;
+			} 
+			iframe {
+				width: 100%;
+    			height: 250px;
+    			@include media($tablet) {
+					height: 480px;
+				}
+				@include media($tabletLand) {
+					height: 480px;
+				}
+				@include media($notebook) {
+					height: 480px;
+				}			
+			}
+		}
+		.return-home {
+			@include span-columns(12);
+			@include omega();
+			text:{align:center;}
+			margin:{top:50px;}
+			@include media($mobileLand) {
+				margin:{top:25px;}
+			}
+			a  {
+				text-decoration: none;
+				color:#fff;
+				text:{transform:uppercase;}
+				border: 1px solid #fff;
+				font:{family:arial;}
+				padding: 10px 30px;
+				font:{size:0.9em;}
+				@include transition(all 0.3s ease-in-out);
+				&:hover {
+					background: #fff;
+					color:$rojo1;
+				}
+				@include media($mobileLand) {
+					font:{size:0.8em;}
+				}
+				@include media($notebook) {
+					padding: 15px 35px;
+				}	
+			}
+		}
+		.line-top-border {
+			@include span-columns(12);
+			@include omega();
+			height: 6px;
+			background: #000;
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: 10;
+		}
+	}
+}
