@@ -144,7 +144,7 @@ module.exports = function(grunt) {
 
         watch: {
           configFiles:{
-            files:['<%= dist %>/<%= scss %>','<%= dist %>/<%= js %>','<%= www %>/**/*.php'],
+            files:['<%= dist %>/<%= scss %>','<%= dist %>/<%= js %>','<%= www %>/**/*.html'],
             options:{
               livereload: true,
             },

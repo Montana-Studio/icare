@@ -174,6 +174,65 @@ body {
 				}
 			}
 		}
+		.menu-channels{
+			@include span-columns(12);
+			ul{
+				margin:20px 0 0;
+				padding: 0;
+				list:{
+					style:none;
+				}
+				text:{
+					align:center;
+				}
+				li{
+					display: inline-block;
+					margin: {
+						bottom:5px;
+					}
+					a{
+						@include pad(10px 5px);
+						display: block;
+						color:$rojo1;
+						@include border-top-radius(5px);
+						@include border-right-radius(5px);
+						@include border-bottom-radius(5px);
+						@include border-left-radius(5px);
+						background:{
+							color:#fff;
+						}
+						font:{
+							size:em(11);
+							family:Arial;
+						}
+						text:{
+							decoration:none;
+						}
+						&:hover{
+							background: {
+								color:$rojo2;
+							}
+							color:#fff;
+							@include transition(background, .3s ease-in-out, color .2s ease-in-out);
+						}
+					}
+					&.used{
+						a{
+							background: {
+								color:$rojo2;
+							}
+							color:#fff;
+							&:hover{
+								color:$rojo1;
+								background:{
+									color:#fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		.frame-promocional {
 			@include span-columns(12);
 			@include omega();
